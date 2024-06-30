@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokémon API</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/main.js" defer></script>
 </head>
 
 <body>
-    <h1>Pokémon API</h1>
+    <header>
+        <h1>Pokémon API</h1>
+        <input type="text" id="search-input" placeholder="Search for a Pokémon..">
+        <button id="get-pokemon">Get a random pokemon!</button>
+    </header>
 
-    <button id="get-pokemon">Get pokemon!</button>
+    <div id="loading">Loading...</div>
 
     <div id="pokemon-container">
+        <div id="pokemon"></div>
     </div>
 </body>
 
